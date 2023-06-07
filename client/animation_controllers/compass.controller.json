@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.north": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "variable.north = 0.0;", 
+            "variable.south = 0.0;", 
+            "variable.west = 0.0;", 
+            "variable.east = 0.0;"
+          ],
+          "transitions": [
+            { "north": "query.cardinal_facing == 2" }, 
+            { "south": "query.cardinal_facing == 3" }, 
+            { "west": "query.cardinal_facing == 4" }, 
+            { "east": "query.cardinal_facing == 5" } 
+          ]
+        },
+        
+        "north": {
+          "on_entry": [ "variable.north = 1.0;" ],
+          "transitions": [ { "default": "query.cardinal_facing != 2" } ]
+        }, 
+        
+        "south": {
+          "on_entry": [ "variable.south = 2.0;" ],
+          "transitions": [ { "default": "query.cardinal_facing != 3" } ]
+        }, 
+        
+        "west": {
+          "on_entry": [ "variable.west = 3.0;" ],
+          "transitions": [ { "default": "query.cardinal_facing != 4" } ]
+        }, 
+        
+        "east": {
+          "on_entry": [ "variable.east = 4.0;" ],
+          "transitions": [ { "default": "query.cardinal_facing != 5" } ]
+        }
+      }
+    }
+  }
+}
