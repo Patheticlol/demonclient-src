@@ -1,0 +1,18 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+	  "animation.player.compass" : {
+			"loop" : true,
+			"bones" : {
+				"compass" : {
+				  "position" : [ 0, 0.0, -20.0 ],
+			    "scale" : 3
+				}, 
+				"compass_shadow" : {
+				  "position" : [ 0, 0.0, -20.0 ],
+			    "scale" : 3
+				}
+			}
+		}
+	}
+}
