@@ -1,0 +1,12 @@
+{
+  "monster_egg":{
+    "textures":"monster_egg"
+  },
+  "infested_deepslate":{
+    "textures":{
+      "up":"infested_deepslate_top",
+      "down":"infested_deepslate_top",
+      "side":"infested_deepslate"
+    }
+  }
+}
